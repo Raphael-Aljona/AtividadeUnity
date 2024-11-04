@@ -2441,6 +2441,8 @@ GameObject:
   - component: {fileID: 1762636331}
   - component: {fileID: 1762636332}
   - component: {fileID: 1762636333}
+  - component: {fileID: 1762636334}
+  - component: {fileID: 1762636335}
   m_Layer: 0
   m_Name: Adam_sit_16x16_2
   m_TagString: Untagged
@@ -2612,11 +2614,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762636325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c9d7ed6df9c324b86f55ecb04f305e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaPersonagem: 100
 --- !u!114 &1762636332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2624,12 +2627,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762636325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff960dff744ed9d47ac900f0d13b56ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUp: 0
 --- !u!114 &1762636333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee841350dbd237438fbeb7b044c83e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personagem: 0
+--- !u!114 &1762636334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efde42b733aeca4aa22ff198a16dc12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pocaoVida: 0
+--- !u!114 &1762636335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2638,9 +2668,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1762636325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ee841350dbd237438fbeb7b044c83e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 484bec9f8fb92324d92a1d726baeeb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pontos: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

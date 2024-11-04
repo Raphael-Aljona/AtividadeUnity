@@ -13,7 +13,7 @@ public class Exercicio05 : MonoBehaviour
 
     void Start()
     {
-        if (pontos > 50)
+        if (pontos >= 50)
         {
             print("Missão bem sucedida");
         }else
