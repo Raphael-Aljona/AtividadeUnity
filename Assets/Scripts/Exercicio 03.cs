@@ -2,21 +2,19 @@ using UnityEngine;
 
 public class Exercicio03 : MonoBehaviour
 {
-    int vidaPersonagem = 100;
-    int vidaRevive;
-    bool powerUp = true;
-
+    [SerializeField] bool personagem;
+    bool powerUp;
+    double vidaPersonagem = 100;
 
     void Start()
     {
-        if (powerUp == true)
+       if (personagem == false && powerUp == true)
         {
-            print("Você coletou um revive power-up");
-            int vidaRevive = 50 % vidaPersonagem;
-        }
-        else
+            vidaPersonagem = vidaPersonagem * 0.5;
+            print("Ainda não, vida atual " + vidaPersonagem);
+        }else
         {
-            print("Game Over");
+            print("Game Over!");
         }
     }
 
