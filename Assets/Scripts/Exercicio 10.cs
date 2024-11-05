@@ -8,10 +8,10 @@ public class Exercicio10 : MonoBehaviour
     //  que têm efeitos diferentes dependendo do tipo coletado.Use um
     //  switch case para determinar o efeito de cada tipo de item.
 
-    int inventario;
-    bool moedas;
-    bool  powerUp;
-    bool pocoes;
+    [SerializeField]int inventario;
+    [SerializeField]bool moedas;
+    [SerializeField]bool  powerUp;
+    [SerializeField]bool pocoes;
 
     void Start()
     {
