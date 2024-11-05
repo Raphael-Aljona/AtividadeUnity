@@ -2443,6 +2443,8 @@ GameObject:
   - component: {fileID: 1762636333}
   - component: {fileID: 1762636334}
   - component: {fileID: 1762636335}
+  - component: {fileID: 1762636336}
+  - component: {fileID: 1762636337}
   m_Layer: 0
   m_Name: Adam_sit_16x16_2
   m_TagString: Untagged
@@ -2666,12 +2668,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762636325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 484bec9f8fb92324d92a1d726baeeb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pontos: 100
+--- !u!114 &1762636336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1d352100d2d844f8475d1250c9d415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escolha: 3
+--- !u!114 &1762636337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e7f6651f72cca48b3311e998926c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faces: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
