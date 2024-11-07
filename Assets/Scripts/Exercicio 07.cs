@@ -21,7 +21,7 @@ public class Exercicio07 : MonoBehaviour
     void Start()
     {
        
-            resultado = Random.Range(1, faces);
+            resultado = Random.Range(1, faces+1);
             print(resultado);
      
 

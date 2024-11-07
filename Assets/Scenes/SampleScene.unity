@@ -2445,6 +2445,10 @@ GameObject:
   - component: {fileID: 1762636335}
   - component: {fileID: 1762636336}
   - component: {fileID: 1762636337}
+  - component: {fileID: 1762636338}
+  - component: {fileID: 1762636339}
+  - component: {fileID: 1762636340}
+  - component: {fileID: 1762636341}
   m_Layer: 0
   m_Name: Adam_sit_16x16_2
   m_TagString: Untagged
@@ -2686,8 +2690,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1d352100d2d844f8475d1250c9d415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escolha: 3
+  Guerreiro: 0
 --- !u!114 &1762636337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e7f6651f72cca48b3311e998926c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faces: 8
+--- !u!114 &1762636338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d14a134f4512b9d44a555dca7bf36632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hora: 23
+  dia: 0
+--- !u!114 &1762636339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28f6aaa3b5627d429e0a6c875089173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeA: 2
+  timeB: 2
+--- !u!114 &1762636340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762636325}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475a4e5174f03d048864fc5e4d776b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventario: 1
+  moedas: 1
+  powerUp: 1
+  pocoes: 0
+--- !u!114 &1762636341
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2696,10 +2757,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1762636325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e7f6651f72cca48b3311e998926c04, type: 3}
+  m_Script: {fileID: 11500000, guid: 24eed7f2419511f458506c04f8d64d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  faces: 8
+  resposta: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

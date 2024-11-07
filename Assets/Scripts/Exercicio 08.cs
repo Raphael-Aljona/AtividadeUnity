@@ -34,10 +34,11 @@ public class Exercicio08 : MonoBehaviour
         {
             hora ++;
             segundos = 0;
-        }else if (hora == 24)
-        {
-            dia++;
-            hora = 0;
+                if (hora == 24)
+                {
+                dia++;
+                hora = 0;
+                }
         }
 
         if (dia >= 1)

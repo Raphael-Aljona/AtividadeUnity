@@ -8,36 +8,31 @@ public class Exercicio10 : MonoBehaviour
     //  que têm efeitos diferentes dependendo do tipo coletado.Use um
     //  switch case para determinar o efeito de cada tipo de item.
 
-    [SerializeField]int inventario;
-    [SerializeField]bool moedas;
-    [SerializeField]bool  powerUp;
-    [SerializeField]bool pocoes;
+    [SerializeReference] string tipoItem;
+    [SerializeReference] int moeda;
+    [SerializeReference] bool escudo = false;
+    [SerializeReference] bool pocao = false;
 
     void Start()
     {
-        switch (inventario)
+        switch (tipoItem)
         {
-            case 01:
-                if (moedas == true)
-                {
-                print("Você ficou muito rico $$");
-                }
+            case "Moeda":
+                moeda++;
+                print("Moeda coletada, você tem" + moeda + "moedas");
+                break;
+            case "Escudo":
+                escudo = true;
+                print("Escudo Ativo!");
+                break;
+            case "Cura":
+                pocao = true;
+                print("Você usou uma poção de vida");
                 break;
 
-            case 02:
-                if (powerUp == true)
-                {
-                    print("Sua força aumentou em 10x");
-                }
-                break;
-
-            case 03:
-                if (moedas == true)
-                {
-                    print("Você ganhou +1 vida!");
-                }
-                break;
         }
+        
+        
     }
 
     // Update is called once per frame
