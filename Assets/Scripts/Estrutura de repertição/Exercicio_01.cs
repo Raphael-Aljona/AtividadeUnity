@@ -7,11 +7,12 @@ public class Exercicio_01 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int num = 5; 0 < num; num--)
+        for (num = 5; 0 < num; num--)
         {
             print(num);
         }
         
+            print("Inicio de Partida");
     }
 
     // Update is called once per frame
