@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using static Unity.Burst.Intrinsics.X86;
@@ -33,7 +34,22 @@ public class Exercicio_07 : MonoBehaviour
         lista.Add(59);
         lista.Add(196);
         lista.Sort();
-        print(lista[20] + ". Esse é o maior valor!");
+        lista.Reverse();
+        //print(lista.Count) -- Exibe o número de itens da lista;
+        print(lista[0] + ". Esse é o maior valor!");
+
+        // int maior = 0;
+        // int [] numeros = { 1, 34, 51, 23, 12, 15, 78}
+
+        // foreach (var item in numeros)
+        // {
+        //    if (item > maior)
+        //    {
+        //      maior =item
+        //    }
+        // }
+
+
     }
 
         // Update is called once per frame
