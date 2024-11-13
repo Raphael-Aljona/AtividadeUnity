@@ -16,7 +16,7 @@ public class Exercicio_08 : MonoBehaviour
 
         for (int i = nome.Length ; i >=0 ; i--)
         {
-            nome2 += nome[i - 1];
+            nome2 += nome[i - 1]; // o (i -1) serve para começar a ler a palavra do -1, ou seja, de trás pra frente;
             print(nome2);
         }
     }

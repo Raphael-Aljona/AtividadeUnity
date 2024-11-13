@@ -19,10 +19,6 @@ public class Desafio02 : MonoBehaviour
 
     void Start()
     {
-
-
-
-
         int quantosAnos = anoAtual - ano;
 
         if (mes > mesAtual || (dia > diaAtual && mes == mesAtual))
@@ -34,9 +30,9 @@ public class Desafio02 : MonoBehaviour
         int quantosDias = (diaAtual - dia + 30) % 30;
 
 
-        print(quantosAnos);
-        print(quantosMeses);
-        print(quantosDias);
+        print(quantosAnos + "Anos");
+        print(quantosMeses + "Meses");
+        print(quantosDias + "Dias");
     }
 
     // Update is called once per frame

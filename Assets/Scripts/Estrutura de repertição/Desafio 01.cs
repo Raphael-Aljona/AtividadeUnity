@@ -7,17 +7,39 @@ using UnityEngine;
 public class Desafio1 : MonoBehaviour
 {
 
-    [SerializeField] char[] vogais = { 'a', 'e', 'i', 'o', 'u' };
+    //maneira 1
+    [SerializeField] string frase = "Olá, boa tarde";
+    [SerializeField] int consoantes;
+
+
+
+    //maneira 2
+    //[SerializeField] char[] vogais = { 'a', 'e', 'i', 'o', 'u' };
     void Start()
     {
-        string frase = "abcdefg";
-        int consoantes = 0;
-        foreach (char c in frase.ToLower())
+
+        //maneira 1
+        for (int i = 0; i < frase.Length; i++)
         {
-            if (vogais.Contains(c) || !Char.IsLetter(c)) { continue; }
-            consoantes++;
+            char letra = frase[i];
+            if ("bcdfghjklmnpqrstvwxyz".Contains(char.ToLower(letra)))
+            {
+                consoantes++;
+            }
         }
-        print($"A frase \"{frase}\" tem {consoantes} consoantes.");
+            print("Essa é sua frase: " + frase + " e esse é o número de consoantes " + consoantes);
+
+        
+        //maneira 2
+
+        //string frase = "abcdefg";
+        //int consoantes = 0;
+        //foreach (char c in frase.ToLower())
+        //{
+        //    if (vogais.Contains(c) || !Char.IsLetter(c)) { continue; }
+        //    consoantes++;
+        //}
+        //print($"A frase \"{frase}\" tem {consoantes} consoantes.");
 
     }
 
